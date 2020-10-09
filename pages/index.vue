@@ -118,4 +118,7 @@ export default {
 .container.light {
   box-shadow:inset 0 0 0 2000px rgba(255, 255, 255, 0.4);
 }
+a:hover {
+  text-decoration: none;
+}
 </style>
