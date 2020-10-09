@@ -5,6 +5,11 @@
     p="0 10%"
     flex-direction="column"
     justify-content="space-between"
+    bg-image="url('/images/zoe-gayah-jonker-IIs0z8QZO-s-unsplash.jpg')"
+    bg-pos="center"
+    bg-repeat="no-repeat"
+    bg-size="cover"
+    box-shadow="inset 0 0 0 2000px rgba(255, 255, 255, 0.4)"
   >
     <c-flex as="nav" justify-content="space-between">
       <c-heading as="h1" size="2xl" text-transform="uppercase">
