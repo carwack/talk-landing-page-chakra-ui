@@ -6,12 +6,13 @@
     p="0 10%"
     flex-direction="column"
     justify-content="space-between"
-    bg-image="url('/images/zoe-gayah-jonker-IIs0z8QZO-s-unsplash.jpg')"
+    :bg-image="`url('/images/${bgs[colorMode].src}')`"
     bg-pos="center"
     bg-repeat="no-repeat"
     bg-size="cover"
     box-shadow="inset 0 0 0 2000px rgba(255, 255, 255, 0.4)"
     class="container"
+    :class="colorMode"
   >
     <c-flex as="nav" justify-content="space-between">
       <c-heading as="h1" size="2xl" text-transform="uppercase">
@@ -77,6 +78,24 @@ export default {
         light: {
           bg: 'white',
           color: 'gray.900'
+        }
+      },
+      bgs: {
+        light: {
+          src: 'zoe-gayah-jonker-IIs0z8QZO-s-unsplash.jpg',
+          by: {
+            name: 'Zoë Gayah Jonker',
+            src: 'https://unsplash.com/@zoegayah?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
+          },
+          unsplash: 'https://unsplash.com/?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
+        },
+        dark: {
+          src: 'joran-quinten-_4SKRpyDLMI-unsplash.jpg',
+          by: {
+            name: 'Joran Quinten',
+            src: 'https://unsplash.com/@joranquinten?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
+          },
+          unsplash: 'https://unsplash.com/photos/qlxnpyFmTS0?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'
         }
       }
     }
