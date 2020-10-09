@@ -12,7 +12,7 @@
       </c-heading>
     </c-flex>
     <c-box>
-      <c-heading as="h1" size="xl" text-transform="uppercase" color="#42b883">
+      <c-heading as="h1" size="xl" text-transform="uppercase" color="brand.1">
         Bel-Vue
       </c-heading>
       <c-heading
@@ -29,7 +29,7 @@
         For more information checkout our
         <c-link
           href="https://www.meetup.com/vue-antwerp"
-          color="#42b883"
+          color="brand.1"
           is-external
         >
           Meetup.com

@@ -1,3 +1,5 @@
+import customTheme from './assets/customTheme'
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -39,6 +41,10 @@ export default {
     // https://go.nuxtjs.dev/emotion
     '@nuxtjs/emotion'
   ],
+
+  chakra: {
+    extendTheme: customTheme
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
